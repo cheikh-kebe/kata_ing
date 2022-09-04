@@ -5,8 +5,8 @@ import {
   Route,
   Redirect
 } from 'react-router-dom';
-import Exercice1 from './pages/Exercice1';
-import Exercice2 from './pages/Exercice2';
+import { Exercice1 } from './pages/Exercice1.jsx';
+import { Exercice2 } from './pages/Exercice2.jsx';
 import './App.css';
 
 function App() {

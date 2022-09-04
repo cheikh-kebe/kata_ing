@@ -2,8 +2,13 @@ import React from 'react';
 import img from '../assets/ing-light.png';
 import './Exercice1.css';
 
-function Exercice1() {
-  return <div></div>;
+
+export const Exercice1 = () => {
+  return (
+    <div>
+      <h1>Exercice1</h1> 
+
+    </div>
+  )
 }
 
-export default Exercice1;
