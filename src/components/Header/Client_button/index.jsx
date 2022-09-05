@@ -3,7 +3,7 @@ import './client_button.styles.scss';
 
 export const ClientButton = ({text}) => {
   return (
-    <a href='#²' className='button--client'>
+    <a data-testid='text-display' href='#²' className='button--client'>
       {text}
     </a>
   )
