@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import { Exercice1 } from "../pages/Exercice1";
 import { Exercice2 } from "../pages/Exercice2";
-import "./App.scss";
+import "./app.styles.scss";
 
 export const App = () => {
   return (
