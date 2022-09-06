@@ -2,8 +2,8 @@ import React from 'react';
 //styles
 import './index.scss';
 //assets
-import search from '../../assets/search.svg';
-import ing from '../../assets/ing-light.png'
+import search from '../../assets/svg/search.svg';
+import ing from '../../assets/images/ing-light.png'
 import { ClientButton } from './Client_button';
 
 export const Header = () => {
