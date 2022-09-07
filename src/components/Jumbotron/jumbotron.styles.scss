@@ -3,10 +3,7 @@
 
 .jumbotron {
   display: grid;
-  grid-template-columns: 1fr 1.35fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-template-columns: 1fr 1.40fr;
   margin: 25px;
 
   .jumbotron--photo {
@@ -17,13 +14,13 @@
       left: -100px;
       width: 55%;
       height: 90vh;
+      object-fit: cover;
     }
   
     .bye-bye {
       position: absolute;
-      z-index: 2;
       top: 15em;
-      left: 15em;
+      left: 25em;
       color: $White;
       margin-bottom: 10px;
   
