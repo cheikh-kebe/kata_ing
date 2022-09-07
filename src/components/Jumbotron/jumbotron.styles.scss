@@ -37,6 +37,21 @@
     }
 
     .strong  {
-      margin-top: 0;
+      padding: 3em;
+      margin: 0;
+    }
+  }
+
+  .bye-bye{
+    position: absolute;
+    left: 26em;
+    top: 10em;
+    color: $White;
+    margin-bottom: 10px;
+
+    b{
+      background-color: $Orange;
+      border-radius: 8px;
+      padding: 10px;
     }
   }

@@ -1,11 +1,12 @@
 import React from 'react';
 //hooks
-import { useFetchData } from '../../app/Hooks/useFetchData';
+import { useFetchData } from '../../Hooks/useFetchData';
 //styles
 import './exercice2.styles.scss'
 
 export const Exercice2 = () => {
   const { state, error } = useFetchData();
+
   if (error) return <div>Oulala, il y a un problème</div>;
   
   return (
