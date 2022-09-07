@@ -1,5 +1,5 @@
-@import '../../Styles/mixins.scss';
-@import '../../Styles/variables.scss';
+@import "../../Styles/mixins.scss";
+@import "../../Styles/variables.scss";
 
 .jumbotron {
   display: grid;
@@ -8,50 +8,52 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin: 25px;
-  }
-  
-  .jumbotron--photo { 
-    grid-area: 1 / 1 / 2 / 2;
 
-    img{
+  .jumbotron--photo {
+    grid-area: 1 / 1 / 2 / 2;
+  
+    img {
       position: absolute;
       left: -100px;
       width: 55%;
-      height: 90vh; 
+      height: 90vh;
     }
   
+    .bye-bye {
+      position: absolute;
+      z-index: 2;
+      top: 15em;
+      left: 15em;
+      color: $White;
+      margin-bottom: 10px;
+  
+      b {
+        background-color: $Orange;
+        border-radius: 8px;
+        padding: 10px;
+      }
+    }
   }
-  .jumbotron--text { 
-    grid-area: 1 / 2 / 2 / 3; 
-    text-align:left;
+  
+  .jumbotron--text {
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: left;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: 35px;
     margin-right: 35px;
-    
-    p{
+  
+    p {
       padding: 3em;
-      letter-spacing: 0.20em;
+      letter-spacing: 0.2em;
       line-height: 1.375;
       font-size: 25px;
     }
-
-    .strong  {
+  
+    .strong {
       padding: 3em;
       margin: 0;
     }
   }
+}
 
-  .bye-bye{
-    position: absolute;
-    left: 26em;
-    top: 10em;
-    color: $White;
-    margin-bottom: 10px;
-
-    b{
-      background-color: $Orange;
-      border-radius: 8px;
-      padding: 10px;
-    }
-  }
