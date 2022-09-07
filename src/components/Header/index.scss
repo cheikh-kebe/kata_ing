@@ -1,22 +1,29 @@
 @import '../../Styles/variables.scss';
+@import '../../Styles/mixins.scss';
+
 @font-face {
   font-family: Arial, sans-serif;
   src: url('#');
 }
 
+.header{
+  position: sticky;
+
+}
 .nav{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  
   grid-column-gap: 0px;
   grid-row-gap: 20px;
-  list-style-type: none;
   align-items: center;
+  margin-top: 12px;
   max-height: 4.375em;
   padding: 0 30px;
   margin-left: 25px;
+  padding-bottom: 20px;
+  box-shadow: black;
+  list-style-type: none;
   
-
   .logo{
     grid-area: 1 / 1 / 2 / 3;
     margin-top: 12px;
@@ -34,7 +41,7 @@
   .help{
     grid-area: 1 / 5 / 2 / 6;
     margin-top: 12px; 
-
+    
   }
   .client{
     grid-area: 1 / 6 / 2 / 7;
@@ -46,7 +53,6 @@
     background: $White;
     color: $Blue;
     border-radius: 8px;
-    position: sticky;
     cursor: pointer;
   }
   .client:hover{
@@ -65,4 +71,74 @@
   .projects:hover, .help:hover{
     text-decoration: underline;
   }
+
+  @include tablet-pt {
+    display: grid;
+    
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    list-style-type: none;
+    align-items: center;
+    margin-top: 12px;
+    max-height: 4.375em;
+    padding: 0 30px;
+    padding-bottom: 20px;
+    margin-left: 25px;
+    box-shadow: black;
+  
+  .logo{
+    grid-area: 1 / 1 / 2 / 4;
+    margin-top: 12px;
+  }
+  .ing_search {
+    grid-area: 1 / 1 / 2 / 3;
+    margin:0 auto;
+    width: 1.25rem; 
+    margin-top: 12px; 
+  }
+  .projects{
+    grid-area: 1 / 4 / 2 / 5;
+    margin-top: 12px; 
+    display: none;
+  }
+  .help{
+    
+    display: none;
+    
+    
+  }
+  .client{
+    grid-area: 1 / 6 / 2 / 7;
+    display: flex;
+    justify-content: center;
+    background: var(--blue);
+    border: 1px solid $Blue;
+    padding: 8.75px 15px 8px;
+    background: $White;
+    color: $Blue;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight:500;
+    cursor: pointer;
+  }
+  .client:hover{
+    
+    background: $Blue;
+    color: $White;
+  }
+  .logo img{
+    width: 99px;
+    height: 26px;
+  }
+  a{
+    text-decoration: none;
+    color: var(--black);
+  }
+  .projects:hover, .help:hover{
+    text-decoration: underline;
+  }
+
+  }
+
+
 }

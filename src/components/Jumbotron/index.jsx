@@ -5,10 +5,9 @@ import ing from '../../assets/images/ing_hand.webp'
 
 export const Jumbotron = () => {
   return (
-    <div class="jumbotron">
+    <div className="jumbotron">
       <div className="jumbotron--photo">
         <img src={ing} alt="ING hand" />
-      </div>
       <p className="bye-bye">
         <b style={{marginLeft: "30px"}}>On se quitte</b>
         <br/>
@@ -19,6 +18,7 @@ export const Jumbotron = () => {
         <b>entre de bonnes mains</b>
         <br/>
       </p>
+      </div>
       <div className="jumbotron--text">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam blanditiis, ullam voluptatem commodi temporibus labore placeat, magni aliquam cumque perspiciatis nobis inventore repellat. Ab commodi harum laboriosam quidem aperiam laborum.
