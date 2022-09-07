@@ -9,16 +9,22 @@ export const Jumbotron = () => {
       <div className="jumbotron--photo">
         <img src={ing} alt="ING hand" />
       </div>
+      <p className="bye-bye">
+        <b style={{marginLeft: "30px"}}>On se quitte</b>
+        <br/>
+        <br/>
+        <b style={{marginLeft: "10px"}} >mais on vous laisse</b>
+        <br/>
+        <br/>
+        <b>entre de bonnes mains</b>
+        <br/>
+      </p>
       <div className="jumbotron--text">
         <p>
-          ING va arrêter son activité de banque en ligne et fermer progressivement les comptes de ses clients en 2022.
-          Dans ce contexte, nous voulons accompagner au mieux nos clients vers un nouvel établissement bancaire.
-          Nous avons mis au point la meilleure alternative bancaire avec Boursorama Banque, leader du marché,
-          qui partage avec nous la même vision de la banque en ligne.
-          Le tout en bénéficiant d’offres exclusives réservées aux clients ING.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam blanditiis, ullam voluptatem commodi temporibus labore placeat, magni aliquam cumque perspiciatis nobis inventore repellat. Ab commodi harum laboriosam quidem aperiam laborum.
         </p>
         <p className="strong">
-          <strong>Le tout en bénéficiant d’offres exclusives réservées aux clients ING.</strong>
+          <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
         </p>
       </div>
 

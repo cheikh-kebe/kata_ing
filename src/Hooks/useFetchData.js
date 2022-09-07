@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import API from '../../Api';
+import API from '../Api';
 
 export const useFetchData = () => {
   const [ state, setState ] = useState({})
@@ -17,6 +17,7 @@ export const useFetchData = () => {
     }
     setLoading(false);
   };
+  
   useEffect(() => {
     fetchAll();
   }, []);
